@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 na = "*"
+nalgebra-lapack = {version = "*", features = ["openblas"], default-features = false}
 rand = "*"

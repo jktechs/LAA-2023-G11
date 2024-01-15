@@ -27,12 +27,13 @@ print(f"Time to solve the linear system: {timeit(solveLinearSystem, number = 1)}
 
 
 
-def findEigenValues():
-	global A, eig_A
+def findEigenValuesAndVectors():
+	global A, eig_A, eig_V
 
-	eig_A = eigvals(A)
+	eig_A, eig_V = eig(A)
 
-print(f"Time to find eigenvalues of the matrix: {timeit(findEigenValues, number = 1)} seconds")
+print(f"Time to find eigenvalues and eigenvectors of the matrix: {timeit(findEigenValuesAndVectors, number = 1)} seconds")
+
 
 
 
